@@ -1,3 +1,4 @@
+#this is the main file
 provider "aws" {
    region     = var.region
 }
