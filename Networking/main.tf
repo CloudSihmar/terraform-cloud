@@ -12,6 +12,9 @@ module "vpc" {
   cidr           = var.vpc_cidr_block
   azs            = var.vpc_availability_zones
   public_subnets = var.vpc_public_subnets
+  
+  enable_nat_gateway = false
+  enable_vpn_gateway = false
 
   tags = {
     Department = "Prod"
